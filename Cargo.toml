@@ -1,0 +1,13 @@
+[package]
+name = "wordle-solver"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+opt-level = 3
+
+[dependencies]
+arrayvec = "0.7.2"
+fastrand = "1.7.0"
